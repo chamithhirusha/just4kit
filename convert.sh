@@ -48,7 +48,7 @@ for f in "${files[@]}"; do
   base_title="${series_name:-${f%.*}}"
   part_str=""
   if [[ "$add_part_flag" =~ ^[Yy]$ ]]; then
-    part_str="... | #Part ${current}"
+    part_str=" | #Part ${current}"
   fi
   
   suffix_str=""
